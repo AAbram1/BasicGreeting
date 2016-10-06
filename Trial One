@@ -9,3 +9,22 @@ function greeting (name)
 }
 
 greeting ("");
+
+function askPolitely (sentence)
+{
+   var sentencelng = sentence.slice(sentence.length -7); 
+   if (sentence.slice(-1) !== "?")
+   {
+    return (sentence)
+   	
+   }
+    else if (sentencelng === "please?" )
+    {
+    	return (sentence)
+    }
+    else 
+    var questionmark = sentence.slice (0, sentence.length-1);
+    return questionmark + " please?"
+}
+
+askPolitely("May I have your name ?");
